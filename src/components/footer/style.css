@@ -1,0 +1,62 @@
+.footer{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg,rgb(26, 26, 26),rgb(63, 63, 63));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer .right{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.footer .right a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    z-index: 1000;
+    width: 45px;
+    border-radius: 50%;
+}
+.footer .right .linked:hover{
+    color: rgb(50, 131, 207);
+    
+}
+.footer .right .insta:hover{
+    color: rgb(250, 86, 135);
+    
+}
+.footer .right .whatsapp:hover{
+    color: rgb(29, 240, 46);
+    
+}
+.footer .right .call:hover{
+    color: rgb(241, 116, 116);
+    
+}
+@media (max-width:520px) {
+    .footer{
+        display: flex;
+       flex-direction: column-reverse;
+        justify-content: space-between;
+       height: 140px;
+       padding: 10px 0;
+    }   
+    .footer .left{
+        display: none;
+    }
+    .footer .right{
+        flex-basis:50% ;
+    }
+}

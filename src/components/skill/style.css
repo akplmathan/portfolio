@@ -1,0 +1,102 @@
+.skill{
+    width: 100vw;
+    padding: 20px;
+    padding-top: 70px;
+}
+.skill .card img{
+    height: 150px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.skill .frontend .card-container{
+    display: flex;
+    gap: 30px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    overflow-x:hidden;
+    justify-content: center;
+    
+}
+.skill .backend .card-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    overflow-x:hidden;
+    flex-wrap: wrap;   
+}
+
+.skill .card{
+   
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px;
+    border: 2px solid gray;
+    background:linear-gradient(250deg,rgb(174, 174, 201),white);
+    border-radius: 30px;
+    z-index: 10;
+}
+
+.skill .tools .card-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.skill .tools .card1{
+    text-align: center;
+    margin: 40px 0;
+    padding: 10px;
+    border: 2px solid gray;
+    background:linear-gradient(250deg,rgb(174, 174, 201),white);
+    border-radius: 30px;
+    z-index: 10;
+    
+}
+.skill .tools .card1 img{
+    height: 150px;
+    width: 200px;
+    object-fit: contain;
+}
+.skill h1{
+    font-size: 45px ;
+    text-align: center;
+    color: blueviolet;
+}
+
+@media (max-width:600px) {
+    .skill .card img{
+        height: 100px;
+        width: 150px;
+        object-fit: contain;
+    }
+    .skill .tools .card1 img{
+        height: 100px;
+        width: 150px;
+        object-fit: contain;
+    }    
+}
+@media (max-width:430px) {
+    .skill .card img{
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+    .skill .card,
+    .skill .tools .card1{
+        height: 140px;
+        width: 140px;
+    }
+    .skill .card h2{
+        font-size: 19px;
+    }
+    .skill .tools .card1 img{
+        width: 80px;
+        height: 80px;
+    }
+    .skill .tools .card-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
